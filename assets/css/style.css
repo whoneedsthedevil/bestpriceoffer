@@ -1,0 +1,157 @@
+
+		html, body {
+			margin: 0;,
+			padding: 0;
+			display: flex;
+			min-height: 100%;
+			width: 100%;
+			flex-flow: column nowrap;
+			font: 400 20px/30px 'Open Sans', Tahoma, sans-serif;
+			justify-content: center;
+		}
+		span.number {
+			font: 300 20px/30px 'Open Sans', Tahoma, sans-serif;
+			color: #111;
+		}
+		ul.unstyled {
+			list-style: none;
+		}
+		h6 {
+			margin: 5px 0 0;
+		}
+		i {
+			border-bottom: 1px dashed coral;
+			cursor: pointer;
+		}
+		table {
+			border-collapse: collapse;
+		    text-align: center;
+		    font: 14px/1.3 'Open Sans';
+		    width: 500px;
+		    margin: auto;
+		    padding: 10px;
+		}
+		table th:first-child, table td:first-child {
+			text-align: left;
+		}
+		table th, table td {
+			width: 20%;
+			padding: 2px;
+		}
+		table tbody tr:nth-child(2n+1) {
+			background: #f2f2f2;
+		}
+
+		.collapse-options {
+			margin-bottom: 25px;
+			text-align: center;
+		}
+
+
+		.main-block, .results-block {
+			align-self: center;
+		}
+
+		#area-calculator {
+			width: 300px;
+			padding-top: 25px;
+			border: 1px solid rgba(43,43,43,.6);
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+		}
+		#area-calculator input {
+			outline: none;
+			width: 220px;
+			font: 300 12px/30px 'Open Sans', Tahoma, sans-serif;
+    		font-style: italic;
+    		text-align: center;
+    		margin: 10px 20px;
+			padding: 5px;
+			border: 1px solid rgba(90, 100, 95, .2);
+			box-sizing: border-box;
+		}
+		#area-calculator input[type='number']:focus, #area-calculator input[type='number']:active {
+			font-style: normal;
+			border: 1px solid rgba(160, 150, 230, .8);
+			transition: .2s;
+		}
+		#area-calculator input[type='submit'] {
+			font: 300 15px/30px 'Open Sans', sans-serif;
+			text-transform: uppercase;
+			margin: 20px;
+			border: 2px solid rgba(0,0,0,0);
+			background: #bce;
+		}
+		#area-calculator input[type='submit']:hover {
+			background: #def;
+			border-color: rgba(20, 150, 230, .8);
+			transition: .2s;
+		}
+
+		.results-block {
+			margin-top: 20px;
+			width: 300px;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			border: 1px solid rgba(0,0,0,.3);
+		}
+		.results-block > div {
+			flex-basis: 50%;
+			width: 100%;
+			text-align: center;
+		}
+
+		.related-announce {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+		}
+
+		.related-announce span.material {
+			font: 600 18px/30px Courier, Tahoma, Verdana;
+			color: #375;
+		}
+		.related-announce span.currency-rub:after {
+			content: ' руб.';
+			font: 14px 'Open Sans', sans-serif;
+		}
+
+		.related-announce div.headings {
+			opacity: 0;
+			width: 100%;
+			font: 13px 'Open Sans Light';
+			color: #4f4f4f;
+			text-align: left;
+			text-indent: 3px;
+			align-self: flex-start;
+			background: #e3e0e0;
+		}
+
+		.open-headings {
+			opacity: 1;
+			transition: .2s;
+		}
+
+		.related-list ul {
+			width: 100%;
+			padding: 0;
+			font-size: 12px;
+		}
+		.related-list ul li:nth-child(2n + 1) {
+			background: rgba(211, 212, 213, .6);
+		}
+		.related-list ul li:nth-child(2n + 1):before {
+			content: 'марка: ';
+		}
+		.related-list ul li:not(:last-child) {
+			border-bottom: 1px solid rgba(50,50,50,.6);
+		}
+
+		.notice {
+			margin-top: 30px;
+			width: 100%;
+			text-align: center;
+			font: 10px/1.3 'Open Sans', sans-serif;
+		}

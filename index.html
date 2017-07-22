@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculate</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="collapse-options">
+		<i>show price-list</i>
+		<table style="display: none;">
+			<thead>
+				<th>Diller</th>
+				<th>Material</th>
+				<th>Volume</th>
+				<th>Price</th>
+			</thead>
+			<tbody></tbody>
+
+		</table>
+	</div>
+	<div class="main-block">
+		<form id="area-calculator">
+			<label for="area-size">Площадь, м<sup>2</sup></label>
+			<input type="number" name='area-size' min=1 max=99999 placeholder='Type area of room'>
+			<input type="submit" value='Подобрать'>
+		</form>
+	</div>
+	<div class="results-block" id="response-data">
+		<div class="related-announce">
+			<div class="headings">Market</div>
+				<span class="material" id="best-brand">  </span>
+			<div class="headings">cost</div>
+				<span class="number" id="best-price">  </span>
+		</div>
+		<div class="related-list">
+			<h6> Подробнее: </h6>
+			<ul class="unstyled" id="offer-details">
+			</ul>
+		</div>
+	</div>
+
+	<div class="notice">1м<sup>2</sup> = 0.4л</div>  
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
